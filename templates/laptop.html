@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+</head>
+<body>
+
+       
+<!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/home" id="logo"><span id="span1">S</span>Entiment <span id="span1">H</span>u<span id="span1">b</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="{{ url_for('static', filename='images/menu.png') }}" alt="" width="30px"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/product">Product</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(67 0 86);">
+                    <li><a class="dropdown-item" href="/mobile">Mobile Phone</a></li>
+		<li><a class="dropdown-item" href="/laptop">Laptop</a></li>
+                  <li><a class="dropdown-item" href="/fridge">Fridge</a></li>
+		 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+               </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/Testing">Testing</a>
+		  </li>
+		<li class="nav-item">
+                    <a class="nav-link" href="/ul">URL</a>
+		  </li>
+            </ul> 	
+          </div>
+        </div>
+      </nav>
+    <!-- navbar -->
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg" id="navbar1">
+    <div class="container-fluid">
+        <b>        <a class="navbar-brand" href="/laptop" id="logo1"><span id="span1">B</span>rand<span id="span1">s</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="{{ url_for('static', filename='images/menu.png') }}" alt="" width="30px"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Wrap each brand link in a list item -->
+            <li class="nav-item2">
+                    <a class="nav-link2" href="/HP">HP</a>
+              
+		 <li class="nav-item2">
+                    <a class="nav-link2" href="/ASUS">ASUS</a>
+                </li>
+                
+		<li class="nav-item2">
+                    <a class="nav-link2" href="/Lenovo">LENOVO</a>
+                </li>
+		<li class="nav-item2">
+                    <a class="nav-link2" href="/Dell">DELL</a>
+                </li>
+		<li class="nav-item2">
+                    <a class="nav-link2" href="/ACER">ACER</a>
+                </li>
+		<li class="nav-item2">
+                    <a class="nav-link2" href="/apple_laptop">APPLE</a>
+		</li></b>
+              
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- navbar --> 
+<b>
+ 
+   <div class="container" id="product-cards">
+     <h1 class="text-center">✨ PRODUCTS  ✨</h1>
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+             <a href="ap1">  <img src="{{ url_for('static', filename='images/ap1.png') }}" alt="">  </a>
+            <div class="card-body">
+              <h3 class="text-center">Apple 2022 MacBook AIR Apple M2Reviews</h3>
+              <p class="text-center"> - (8 GB/256 GB SSD/Mac OS Monterey) MLY33HN/A  (13.6 Inch, Midnight, 1.24 Kg</p>
+                    <h2>₹1,06,990<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <a href="/ap2">  <img src="{{ url_for('static', filename='images/ap2.png') }}" alt=""> </a>
+            <div class="card-body">
+               <h3 class="text-center">Apple 2020 Macbook Air Apple M1</h3>
+              <p class="text-center"> - (8 GB/256 GB SSD/Mac OS Big Sur) MGND3HN/A  (13.3 inch, Gold, 1.29 kg)Reviews</p>
+                    <h2>₹83,990<span><li class="fa-solid fa-cart-shopping"></li></span></h2>            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+                 <a href="/ap3"><img src="{{ url_for('static', filename='images/ap3.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">Apple 2022 MacBook AIR Apple M2Reviews </h3>
+              <p class="text-center"> - (8 GB/256 GB SSD/Mac OS Monterey) MLXW3HN/A  (13.6 Inch, Space Grey, 1.24 Kg)
+</p>
+             <h2>₹1,06,990 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+               <a href="/ap4"><img src="{{ url_for('static', filename='images/ap4.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">Apple 2023 Macbook Air Apple M2Reviews</h3>
+              <p class="text-center"> - (8 GB/512 GB SSD/macOS Ventura) MQKT3HN/A  (15.3 Inch, Silver, 1.51 Kg)</p>
+               <h2>₹1,44,990<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ 		 <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <a href="/d5">  <img src="{{ url_for('static', filename='images/d5.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">DELL Inspiron 15 Intel Core i5 11th Gen Reviews</h3>
+              <p class="text-center"> - (8 GB/512 GB SSD/Windows 11 Home) IN35117W5CCS01ORB1 Thin and Light Laptop  (15.6 inch, Black, 1.85 kg, With MS Office)</p>
+                <h2>₹44,990<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <a href="/d6">  <img src="{{ url_for('static', filename='images/d6.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">DELL Inspiron Intel Core i3 11th Gen 1115G4Reviews</h3>
+        <p class="text-center"> - (8 GB/1 TB HDD/Windows 11 Home) Inspiron 3511 Thin and Light Laptop  (14.96 inch, Carbon Black, 1.8 kg, With MS Office)</p>
+                <h2>₹29,155 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <a href="/d7"><img src="{{ url_for('static', filename='images/d7.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">DELL Inspiron Intel Pentium Silver N5030 Reviews</h3>
+              <p class="text-center"> - (8 GB/256 GB SSD/Windows 11 Home) Inspiron 3521 Notebook  (15.6 Inch, Carbon Black, 1.61 Kg, With MS Office)</p>
+              <h2>₹32,000 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+              <a href="/d8"><img src="{{ url_for('static', filename='images/d8.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">DELL Inspiron 3000 Intel Core i3 11th Gen 1115G4 Reviews</h3>
+              <p class="text-center">- (8 GB/512 GB SSD/Windows 11 Home) 3511 Thin and Light Laptop  (15.6 Inch, Black, 1.8 Kgs, With MS Office)</p>
+            
+              <h2>₹34,890<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+        
+     <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <a href="/l5">  <img src="{{ url_for('static', filename='images/l5.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">Lenovo IdeaPad Slim 3 Intel Core i5 12th Gen 1235U Reviews</h3>
+              <p class="text-center">- (8 GB/512 GB SSD/Windows 11 Home) 15IAU7 Thin and Light Laptop  (15.6 Inch, Arctic Grey, 1.63 Kg, With MS Office)</p>
+                <h2>₹48,990
+<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <a href="/l6">  <img src="{{ url_for('static', filename='images/l6.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">Lenovo IdeaPad Slim 5 Intel Core i5 12th Gen 12450H  Reviews</h3>
+        <p class="text-center">(16 GB/512 GB SSD/Windows 11 Home) 16IAH8 Laptop  (16 Inch, Cloud Grey, 1.89 Kg, With MS Office)</p>
+                <h2>₹62,190<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <a href="/l7"><img src="{{ url_for('static', filename='images/l7.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">Lenovo IdeaPad Slim 5 Intel Core i5 13th Gen 13420H -Reviews</h3>
+              <p class="text-center"> (16 GB/512 GB SSD/Windows 11 Home) 14IRL8 Thin and Light Laptop  (14 Inch, Cloud Grey, 1.46 kg, With MS Office)  </p>
+              <h2>₹72,290<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+              <a href="/l8"><img src="{{ url_for('static', filename='images/l8.png') }}" alt=""></a><br>
+            <div class="card-body">
+              <h3 class="text-center">Lenovo IdeaPad 1 AMD Ryzen 3 Dual Core 3250U  reviews</h3><br>
+              <p class="text-center"> (8 GB/512 GB SSD/Windows 11 Home) 15ADA7 Thin and Light Laptop  (15.6 Inch, Cloud Grey, 1.6 Kg, With MS Office)</p>            
+              <h2>₹33,599<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <a href="/h5">  <img src="{{ url_for('static', filename='images/h5.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">HP 14s Intel Core i3 11th Gen 1125G4 Reviews</h3>
+              <p class="text-center"> (8 GB/256 GB SSD/Windows 11 Home) 14s- dy2506TU Thin and Light Laptop  (14 inch, Natural Silver, 1.46 kg, With MS Office)</p>
+                <h2>₹37,990<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card"><br>
+            <a href="/h6">  <img src="{{ url_for('static', filename='images/h6.png') }}" alt=""></a>
+            <div class="card-body"><br>
+              <h3 class="text-center">HP Pavilion x360 Intel Core i5 12th Gen 1235U Reviews</h3><br>
+        <p class="text-center"> (16 GB/512 GB SSD/Windows 11 Home) 14-ek0074TU 2 in 1 Laptop  (14 Inch, Natural Silver, 1.41 Kg, With MS Office)</p>
+                <h2>₹75,490<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <a href="/h7"><img src="{{ url_for('static', filename='images/h7.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">HP Pavilion x360 Intel Core i3 11th Gen 1115G4 -Reviews</h3>
+              <p class="text-center"> (8 GB/512 GB SSD/Windows 10 Home) 14-dw1037TU 2 in 1 Laptop  (14 inch, Natural Silver, 1.61 kg, With MS Office) </p>
+              <h2>₹58,890 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+              <a href="/h8"><img src="{{ url_for('static', filename='images/h8.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">HP Pavilion Intel Core i7 12th Gen 1255U  Reviews</h3><br>
+              <p class="text-center"> (16 GB/1 TB SSD/Windows 11 Home) 14-dv2015TU Thin and Light Laptop  (14 inch, Natural Silver, 1.41 Kg, With MS Office)</p>
+                          <h2>₹78,990<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+ 
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <a href="/la5">  <img src="{{ url_for('static', filename='images/la5.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">ASUS Vivobook Go 15 (2023) AMD Ryzen 5 Quad Core 7520U  Reviews</h3>
+              <p class="text-center"> (8 GB/512 GB SSD/Windows 11 Home) E1504FA-NJ521WS Thin and Light Laptop  (15.6 Inch, Cool Silver, 1.63 Kg, With MS Office)</p>
+                <h2>₹39,990<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <a href="/la6">  <img src="{{ url_for('static', filename='images/la6.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">ASUS Vivobook 15 Intel Core i3 12th Gen 1215U Reviews</h3>
+        <p class="text-center"> (16 GB/512 GB SSD/Windows 11 Home) X1502ZA-EJ993WS Thin and Light Laptop  (15.6 Inch, Icelight Silver, 1.70 Kg, With MS Office)</p>
+                <h2>₹40,990<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <a href="/la7"><img src="{{ url_for('static', filename='images/la7.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">ASUS Vivobook 15 AMD Ryzen 7 Octa Core 5800HS Reviews</h3>
+              <p class="text-center">(16 GB/512 GB SSD/Windows 11 Home) M1502QA-EJ741WS Thin and Light Laptop  (15.6 Inch, Quiet Blue, 1.70 kg, With MS Office)</p>
+              <h2>₹49,990 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+              <a href="/la8"><img src="{{ url_for('static', filename='images/la8.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">ASUS Vivobook Go 15 OLED (2023) AMD Ryzen 5 Quad Core 7520U Reviews</h3>
+              <p class="text-center"> (8 GB/512 GB SSD/Windows 11 Home) E1504FA-LK522WS Thin and Light Laptop  (15.6 Inch, Mixed Black, 1.63 Kg, With MS Office)</p>
+            
+              <h2>₹44,990<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <a href="/ac6">  <img src="{{ url_for('static', filename='images/ac6.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">Acer Aspire 7 (2023) Intel Core i5 12th Gen 12450H Reviews</h3>
+        <p class="text-center">- (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX 3050/144 Hz) A715-76G Gaming Laptop  (15.6 Inch, Charcoal Black, 2.1 Kg)</p>
+                <h2>₹60,990 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <a href="/ac7"><img src="{{ url_for('static', filename='images/ac7.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">Acer Nitro V Intel Core i5 13th Gen 13420H Reviews</h3>
+              <p class="text-center"> - (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX 2050) ANV15-51-549B Gaming Laptop  (15.6 Inch, Obsidian Black, 2.1 Kg) </p>
+              <h2>₹67,990 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+              <a href="/ac8"><img src="{{ url_for('static', filename='images/ac8.png') }}" alt=""></a>
+            <div class="card-body">
+              <h3 class="text-center">Acer Nitro 5 Intel Core i7 12th Gen 12650H  Reviews</h3>
+              <p class="text-center">- (16 GB/512 GB SSD/Windows 11 Home/6 GB Graphics/NVIDIA GeForce RTX 4050/144 Hz) AN515-58-74GG Gaming Laptop  (15.6 Inch, Obsidian Black, 2.6 Kg)</p>            
+              <h2>₹94,990<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product cards -->
+   <a href="#" class="arrow"><i><img src="{{ url_for('static', filename='images/arrow.png') }}" alt=""></i></a>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</body>
+</html>
